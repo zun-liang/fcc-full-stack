@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Checkout Page</title>
+  </head>
+  <body>
+    <h1>Checkout</h1>
+    <section>
+      <h2>Your Cart</h2>
+      <figure>
+        <img
+          src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg"
+          alt="speed cube"
+        />
+        <figcaption>Speed Cube</figcaption>
+      </figure>
+      <p>$10.99</p>
+    </section>
+    <section>
+      <h2>Payment Information</h2>
+      <form>
+        <label for="card-name">Cardholder Name</label>
+        <input
+          type="text"
+          id="card-name"
+          name="card-name"
+          aria-required="true"
+          required
+        />
+        <label for="card-number">Card Number</label>
+        <input
+          type="text"
+          id="card-number"
+          name="card-number"
+          aria-required="true"
+          required
+        />
+        <label for="expire">Expiry Date</label>
+        <input
+          type="month"
+          id="expire"
+          name="expire"
+          aria-required="true"
+          required
+        />
+        <label for="cvv">CVV</label>
+        <input
+          type="number"
+          id="cvv"
+          name="cvv"
+          aria-required="true"
+          required
+        />
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+  </body>
+</html>
