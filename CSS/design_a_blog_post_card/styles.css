@@ -1,0 +1,52 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-post-card {
+  width: 300px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 5px 5px 5px lightgray;
+  text-align: center;
+}
+
+.post-img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom: 5px solid rgb(38, 38, 38);
+}
+
+.post-content {
+  padding: 0 15px 15px 15px;
+}
+
+.post-title {
+  color: rgb(38, 38, 38);
+  margin: 15px;
+}
+
+.post-excerpt {
+  color: rgb(102, 102, 102);
+  margin: 10px;
+}
+
+.read-more {
+  display: inline-block;
+  color: white;
+  background-color: rgb(38, 38, 38);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  background-color: rgb(112, 112, 112);
+}
