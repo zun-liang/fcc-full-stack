@@ -1,11 +1,54 @@
+:root {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   width: 100vw;
 }
 
 form {
+  width: 80%;
+  margin: 30px auto;
+  padding: 50px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px gray;
+}
+
+form > legend {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+label,
+input,
+select,
+fieldset,
+textarea,
+button {
+  width: 100%;
+}
+
+input {
+  height: 1.5rem;
+  padding: 5px;
+}
+
+input:nth-child(1) {
+  border-radius: 8px;
+  border: 1px solid red;
+}
+
+input,
+textarea {
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 input:focus,
@@ -25,11 +68,45 @@ textarea:valid {
   border: 1px solid green;
 }
 
+label {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+fieldset {
+  display: flex;
+}
+
+fieldset > div {
+  min-width: 20%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.radio-group input[type="radio"]:checked {
+  border-color: green;
+  background-color: green;
+  box-shadow: 1px 1px 5px green;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: green;
+}
+
+textarea {
+  min-height: 10rem;
+  padding: 10px;
+  color: gray;
+}
+
 button {
+  font-size: 1.2rem;
   color: white;
   background-color: green;
   border: none;
   padding: 10px;
+  border-radius: 5px;
 }
 
 button:hover {
