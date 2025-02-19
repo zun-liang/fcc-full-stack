@@ -4,15 +4,69 @@
   padding: 0;
 }
 
-:root {
+html {
   font-size: 24px;
 }
 
+body {
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  overflow-y: hidden;
+  background-color: mintcream;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .newspaper {
+  width: 90%;
+  box-shadow: 2px 2px 5px gray;
+  padding: 2rem 1rem;
+  background-color: white;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
 }
 
-h1 {
+.name {
+  font-size: 2rem;
+  font-family: "Times New Roman", serif;
   text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.date {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.headline {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.sub-headline {
+  font-weight: 100;
+  font-size: 1.5em;
+  font-style: italic;
+  margin-bottom: 0.8rem;
+}
+
+.author {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.text {
+  text-indent: 20px;
+  line-height: 2em;
+  margin-bottom: 1rem;
+}
+
+.text::first-letter {
+  font-size: 2em;
+  font-weight: bold;
 }
