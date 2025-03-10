@@ -41,7 +41,7 @@ body {
 }
 
 #confidential {
-  display: inline-block !important;
+  display: inline-block;
   padding: 20px;
   font-size: 2rem;
   font-weight: 700;
@@ -50,7 +50,7 @@ body {
 }
 
 #top-secret {
-  display: inline-block !important;
+  display: inline-block;
   padding: 10px;
   transform: rotate(20deg);
   font-size: 1.5rem;
