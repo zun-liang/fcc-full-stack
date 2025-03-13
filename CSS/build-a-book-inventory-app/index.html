@@ -10,55 +10,59 @@
     <table>
       <thead>
         <tr>
-          <th>Title</th>
-          <th>Author</th>
-          <th>Category</th>
-          <th>Status</th>
-          <th>Rate</th>
+          <th scope="col">Title</th>
+          <th scope="col">Author</th>
+          <th scope="col">Category</th>
+          <th scope="col">Status</th>
+          <th scope="col">Rate</th>
         </tr>
       </thead>
       <tbody>
         <tr class="read">
-          <th>The Three Musketeers</th>
+          <th scope="row">The Three Musketeers</th>
           <td>Alexandre Dumas</td>
           <td>Historical Novel</td>
-          <td><span class="read">Read</span></td>
-          <td>three</td>
+          <td><span class="status">Read</span></td>
+          <td><span class="rate three">three</span></td>
         </tr>
         <tr class="to-read">
-          <th>The Plague</th>
+          <th scope="row">The Plague</th>
           <td>Albert Camus</td>
           <td>Philosofical Novel</td>
-          <td><span class="to-read">To Read</span></td>
-          <td>zero</td>
+          <td><span class="status">To Read</span></td>
+          <td>
+            <span class="rate"><span></span></span>
+          </td>
         </tr>
         <tr class="read">
-          <th>The Metamorphosis</th>
+          <th scope="row">The Metamorphosis</th>
           <td>Franz Kafka</td>
           <td>Novella</td>
-          <td><span class="read">Read</span></td>
-          <td>one</td>
+          <td><span class="status">Read</span></td>
+          <td><span class="rate one">one</span></td>
         </tr>
         <tr class="read">
-          <th>Dead Souls</th>
+          <th scope="row">Dead Souls</th>
           <td>Nikolai Gogol</td>
           <td>Picaresque</td>
-          <td><span class="read">Read</span></td>
-          <td>two</td>
+          <td><span class="status">Read</span></td>
+          <td><span class="rate two">two</span></td>
         </tr>
         <tr class="in-progress">
-          <th>Lord of the Flies</th>
+          <th scope="row">Lord of the Flies</th>
           <td>William Golding</td>
           <td>Allegorical Novel</td>
-          <td><span class="in-progress">In Progress</span></td>
-          <td>zero</td>
+          <td><span class="status">In Progress</span></td>
+          <td>
+            <span class="rate"><span></span></span>
+          </td>
         </tr>
         <tr class="read">
-          <th>Do Androids Dream of Electric Sheep?</th>
+          <th scope="row">Do Androids Dream of Electric Sheep?</th>
           <td>Philip K. Dick</td>
           <td>Science Fiction</td>
-          <td><span class="read">Read</span></td>
-          <td>two</td>
+          <td><span class="status">Read</span></td>
+          <td><span class="rate two">two</span></td>
         </tr>
       </tbody>
     </table>
