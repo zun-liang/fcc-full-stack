@@ -26,22 +26,18 @@ body {
   height: 500px;
   border: 2px solid black;
   box-shadow: 3px 3px 2px black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
+  background-color: rgb(251, 246, 239);
 }
 
 #confidential,
 #top-secret {
+  display: inline-block;
   border: 5px solid red;
   text-transform: uppercase;
   color: red;
 }
 
 #confidential {
-  display: inline-block;
   padding: 20px;
   font-size: 2rem;
   font-weight: 700;
@@ -50,7 +46,6 @@ body {
 }
 
 #top-secret {
-  display: inline-block;
   padding: 10px;
   transform: rotate(20deg);
   font-size: 1.5rem;
@@ -62,6 +57,7 @@ body {
 p {
   width: 100%;
   font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .blurred {
