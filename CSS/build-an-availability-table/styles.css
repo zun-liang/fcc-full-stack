@@ -1,0 +1,45 @@
+/* :root {
+  --color0: rgb(255, 255, 255);
+  --color1: rgb(191, 236, 191);
+  --color2: rgb(149, 215, 149);
+  --color3: rgb(112, 205, 112);
+  --color4: rgb(77, 174, 77);
+  --color5: rgb(22, 108, 22);
+} */
+
+:root {
+  --color0: #ffffff;
+  --color1: #e6f9e6;
+  --color2: #b4f8c8;
+  --color3: #70c282;
+  --color4: #388e3c;
+  --color5: #1b5e20;
+}
+
+table {
+  border: 1px solid black;
+}
+
+.availability-0 {
+  background-color: var(--color0);
+}
+
+.availability-1 {
+  background-color: var(--color1);
+}
+
+.availability-2 {
+  background-color: var(--color2);
+}
+
+.availability-3 {
+  background-color: var(--color3);
+}
+
+.availability-4 {
+  background-color: var(--color4);
+}
+
+.availability-5 {
+  background-color: var(--color5);
+}
