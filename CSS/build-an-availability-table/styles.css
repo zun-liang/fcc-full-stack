@@ -9,7 +9,16 @@
   --dashed-border: 1px dashed black;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
 table {
+  margin-top: 100px;
   border-collapse: collapse;
 }
 
@@ -21,36 +30,62 @@ tr {
   height: 20px;
 }
 
-tr[class="half"] {
+td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.bottom {
+  border-bottom: 1px solid black;
+}
+
+.half td {
   border-bottom: var(--dashed-border);
 }
 
-tr[class="sharp"] {
+.sharp td {
   border-bottom: var(--solid-border);
 }
 
-.availability-0 {
+.time {
+  position: relative;
+  bottom: 10px;
+}
+
+.last {
+  top: 10px;
+}
+
+.available-0 {
   background-color: var(--color0);
 }
 
-.availability-1 {
+.available-1 {
   background-color: var(--color1);
 }
 
-.availability-2 {
+.available-2 {
   background-color: var(--color2);
 }
 
-.availability-3 {
+.available-3 {
   background-color: var(--color3);
 }
 
-.availability-4 {
+.available-4 {
   background-color: var(--color4);
 }
 
-.availability-5 {
+.available-5 {
   background-color: var(--color5);
+}
+
+#legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 #legend-gradient {
@@ -59,18 +94,12 @@ tr[class="sharp"] {
   border: 1px solid black;
   background-image: linear-gradient(
     to right,
-    var(--color0) 0%,
-    var(--color0) 16.67%,
-    var(--color1) 16.67%,
-    var(--color1) 33.34%,
-    var(--color2) 33.34%,
-    var(--color2) 50.01%,
-    var(--color3) 50.01%,
-    var(--color3) 66.68%,
-    var(--color4) 66.68%,
-    var(--color4) 83.35%,
-    var(--color5) 83.35%,
-    var(--color5) 100%
+    var(--color0) 0% 16.67%,
+    var(--color1) 16.67% 33.34%,
+    var(--color2) 33.34% 50.01%,
+    var(--color3) 50.01% 66.68%,
+    var(--color4) 66.68% 83.35%,
+    var(--color5) 83.35% 100%
   );
 }
 
