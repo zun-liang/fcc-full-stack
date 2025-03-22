@@ -94,12 +94,12 @@ td {
   border: 1px solid black;
   background-image: linear-gradient(
     to right,
-    var(--color0) 0% 16.67%,
-    var(--color1) 16.67% 33.34%,
-    var(--color2) 33.34% 50.01%,
-    var(--color3) 50.01% 66.68%,
-    var(--color4) 66.68% 83.35%,
-    var(--color5) 83.35% 100%
+    var(--color0) 0% 17%,
+    var(--color1) 17% 33%,
+    var(--color2) 33% 50%,
+    var(--color3) 50% 67%,
+    var(--color4) 67% 83%,
+    var(--color5) 83% 100%
   );
 }
 
