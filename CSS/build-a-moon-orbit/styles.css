@@ -1,6 +1,7 @@
 body {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +11,7 @@ body {
 .space {
   width: 200px;
   height: 200px;
-  background-color: white;
+  position: relative;
 }
 
 .earth {
@@ -29,18 +30,18 @@ body {
   bottom: 50%;
   right: 50%;
   transform: translate(-50%, -50%);
-  background-color: yellow;
   border-radius: 50%;
   width: 200px;
   height: 200px;
+  animation: orbit 5s linear infinite;
 }
 
 @keyframes orbit {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg) translate(-50%, -50%);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(360deg) translate(-50%, -50%);
   }
 }
 
@@ -53,5 +54,5 @@ body {
   height: 30px;
   border-radius: 50%;
   background-color: gray;
-  animation: transform 5s infinite linear;
+  box-shadow: 1px 1px 5px gray;
 }
