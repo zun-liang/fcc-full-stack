@@ -1,13 +1,19 @@
 const maskEmail = (email) => {
-  atIndex = email.indexOf("@");
-  firstLetter = email[0];
-  lastLetter = email[atIndex - 1];
-  asteriskLength = atIndex - 2;
-  masked = "";
-  for (let i = 0; i < asteriskLength; i++) {
-    masked += "*";
+  const atIndex = email.indexOf("@");
+  const name = email.slice(0, atIndex);
+  if (name.length <= 2) {
+    return email;
   }
-  return firstLetter + masked + lastLetter + email.slice(atIndex);
+  return (
+    email[0] +
+    "*".repeat(name.length - 2) +
+    email[atIndex - 1] +
+    email.slice(atIndex)
+  );
 };
-let email = "hello2025@gmail.com";
+
+let email = "apple.pie@example.com";
+console.log(maskEmail(email));
+
+email = "freecodecamp@example.com";
 console.log(maskEmail(email));
