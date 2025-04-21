@@ -11,7 +11,10 @@ const findProductIndex = (name) => {
 
 const addProduct = (product) => {
   if (findProductIndex(product.name) === -1) {
-    inventory.push(product);
+    inventory.push({
+      name: product.name.toLowerCase(),
+      quantity: product.quantity,
+    });
     console.log(`${product.name.toLowerCase()} added to inventory`);
   } else {
     inventory[findProductIndex(product.name)].quantity += product.quantity;
@@ -25,6 +28,11 @@ const removeProduct = (name, quantity) => {
     console.log(`${name.toLowerCase()} not found`);
   } else if (inventory[index].quantity > quantity) {
     inventory[index].quantity -= quantity;
+    console.log(
+      `Remaining ${inventory[index].name.toLowerCase()} pieces: ${
+        inventory[index].quantity
+      }`
+    );
   } else if (inventory[index].quantity === quantity) {
     let left = inventory.slice(0, index);
     let right = inventory.slice(index + 1);
