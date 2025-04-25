@@ -53,5 +53,4 @@ const sortByYear = (book1, book2) => {
 
 const filteredBooks = books.filter((book) => book.releaseYear > 2020);
 
-filteredBooks.sort(sortByYear());
-console.log(filteredBooks);
+filteredBooks.sort(sortByYear);
