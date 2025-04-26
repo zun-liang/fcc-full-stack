@@ -54,3 +54,9 @@ const sortByYear = (book1, book2) => {
 const filteredBooks = books.filter((book) => book.releaseYear > 2020);
 
 filteredBooks.sort(sortByYear);
+
+const multiply = (a) => (b) => a * b;
+const operations = [multiply(2), multiply(3)];
+const result = operations.reduce((acc, fn) => fn(acc), 5);
+
+console.log(result);
