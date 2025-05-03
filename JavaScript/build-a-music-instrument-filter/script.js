@@ -35,12 +35,14 @@ const instrumentCards = (instrumentCategory) => {
       (instrument) => instrument.category === instrumentCategory
     );
   }
-  return resultArr.map(
-    (instrument) =>
-      `<div class="card"><h2>${instrument.instrument}</h2><p>${instrument.price}</p></div>`
-  );
+  return resultArr
+    .map(
+      (instrument) =>
+        `<div class="card"><h2>${instrument.instrument}</h2><p>$${instrument.price}</p></div>`
+    )
+    .join("");
 };
 
-selectContainer.addEventListener("change", () =>
-  console.log(instrumentCards(selectContainer.value))
-);
+selectContainer.addEventListener("change", () => {
+  productsContainer.innerHTML = instrumentCards(selectContainer.value);
+});
