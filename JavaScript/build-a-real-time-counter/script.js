@@ -2,7 +2,7 @@ const textInput = document.getElementById("text-input");
 const charCount = document.getElementById("char-count");
 const getLength = () => {
   let inputLength = textInput.value.length;
-  if (inputLength <= 50) {
+  if (inputLength < 50) {
     charCount.textContent = `Character Count: ${inputLength}/50`;
   } else {
     charCount.textContent = `Character Count: 50/50`;
